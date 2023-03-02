@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://ejikbuqbd05d"]
+[gd_scene load_steps=2 format=3 uid="uid://ejikbuqbd05d"]
+
+[ext_resource type="PackedScene" uid="uid://cys7u1fglghf" path="res://Menu/action_remap_button.tscn" id="1_herdf"]
 
 [node name="RebindKeys" type="Control"]
 layout_mode = 3
@@ -32,7 +34,41 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
-text = "Key name"
+text = "Up"
 
-[node name="Button" type="Button" parent="CanvasLayer/VBoxContainer/HBoxContainer"]
+[node name="action_remap_button" parent="CanvasLayer/VBoxContainer/HBoxContainer" instance=ExtResource("1_herdf")]
 layout_mode = 2
+action = "move_up"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "Down"
+
+[node name="action_remap_button" parent="CanvasLayer/VBoxContainer/HBoxContainer2" instance=ExtResource("1_herdf")]
+layout_mode = 2
+action = "move_down"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+text = "Left"
+
+[node name="action_remap_button" parent="CanvasLayer/VBoxContainer/HBoxContainer3" instance=ExtResource("1_herdf")]
+layout_mode = 2
+action = "move_left"
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+text = "Right"
+
+[node name="action_remap_button" parent="CanvasLayer/VBoxContainer/HBoxContainer4" instance=ExtResource("1_herdf")]
+layout_mode = 2
+action = "move_right"
