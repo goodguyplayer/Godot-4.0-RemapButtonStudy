@@ -3,7 +3,7 @@
 This is a project made to study and understand the possible ways to remap an item in InputMap.
 There is no proper end goal but to try and comprehend the way remapping works, as well as attempt different approaches.
 
-One can find the implementations in Menus/remappers/, while the scene in Menu/ is purely for visual tests.
+One can find the implementations in [remappers](/Menus/remappers/), while the scene in [Menu](/Menu/) is purely for visual tests.
 
 ## Installation
 
@@ -12,7 +12,7 @@ It was made with v4.0.stable.official, therefore it may not work with previous v
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss the changes, as well as possible new implementation ideas.
+Pull requests are welcome. For major changes, code fixes or even alternative implementations of the remap an item, please open an issue to discuss the idea.
 
 Please make sure to update tests as appropriate.
 
