@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://ejikbuqbd05d"]
+[gd_scene load_steps=3 format=3 uid="uid://44crxa56bryo"]
 
-[ext_resource type="PackedScene" uid="uid://cys7u1fglghf" path="res://Menu/action_remap_button.tscn" id="1_herdf"]
+[ext_resource type="PackedScene" uid="uid://dgrgs7ysrdoxc" path="res://Menu/remappers/action_remap_button_origin.tscn" id="1_herdf"]
+[ext_resource type="PackedScene" uid="uid://bqvvwtifdbj5b" path="res://Menu/remappers/action_remap_button_all_inputs.tscn" id="2_ikwgn"]
 
 [node name="RebindKeys" type="Control"]
 layout_mode = 3
@@ -20,14 +21,16 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer"]
-layout_mode = 2
-text = "Rebind options"
-
 [node name="Label2" type="Label" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
 text = "----------------"
 horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "Original (Only keyboard)"
+vertical_alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
@@ -72,3 +75,99 @@ text = "Right"
 [node name="action_remap_button" parent="CanvasLayer/VBoxContainer/HBoxContainer4" instance=ExtResource("1_herdf")]
 layout_mode = 2
 action = "move_right"
+
+[node name="Label3" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "----------------"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "Considers 3 devices"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+text = "Up"
+
+[node name="Button" parent="CanvasLayer/VBoxContainer/HBoxContainer5" instance=ExtResource("2_ikwgn")]
+layout_mode = 2
+action = "move_up"
+
+[node name="Button2" parent="CanvasLayer/VBoxContainer/HBoxContainer5" instance=ExtResource("2_ikwgn")]
+layout_mode = 2
+action = "move_up"
+option_device = 1
+
+[node name="Button3" parent="CanvasLayer/VBoxContainer/HBoxContainer5" instance=ExtResource("2_ikwgn")]
+layout_mode = 2
+action = "move_up"
+option_device = 2
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+text = "Down"
+
+[node name="Button" parent="CanvasLayer/VBoxContainer/HBoxContainer6" instance=ExtResource("2_ikwgn")]
+layout_mode = 2
+action = "move_down"
+
+[node name="Button2" parent="CanvasLayer/VBoxContainer/HBoxContainer6" instance=ExtResource("2_ikwgn")]
+layout_mode = 2
+action = "move_down"
+option_device = 1
+
+[node name="Button3" parent="CanvasLayer/VBoxContainer/HBoxContainer6" instance=ExtResource("2_ikwgn")]
+layout_mode = 2
+action = "move_down"
+option_device = 2
+
+[node name="HBoxContainer7" type="HBoxContainer" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer7"]
+layout_mode = 2
+text = "Left"
+
+[node name="Button" parent="CanvasLayer/VBoxContainer/HBoxContainer7" instance=ExtResource("2_ikwgn")]
+layout_mode = 2
+action = "move_left"
+
+[node name="Button2" parent="CanvasLayer/VBoxContainer/HBoxContainer7" instance=ExtResource("2_ikwgn")]
+layout_mode = 2
+action = "move_left"
+option_device = 1
+
+[node name="Button3" parent="CanvasLayer/VBoxContainer/HBoxContainer7" instance=ExtResource("2_ikwgn")]
+layout_mode = 2
+action = "move_left"
+option_device = 2
+
+[node name="HBoxContainer8" type="HBoxContainer" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer8"]
+layout_mode = 2
+text = "Right"
+
+[node name="Button" parent="CanvasLayer/VBoxContainer/HBoxContainer8" instance=ExtResource("2_ikwgn")]
+layout_mode = 2
+action = "move_right"
+
+[node name="Button2" parent="CanvasLayer/VBoxContainer/HBoxContainer8" instance=ExtResource("2_ikwgn")]
+layout_mode = 2
+action = "move_right"
+option_device = 1
+
+[node name="Button3" parent="CanvasLayer/VBoxContainer/HBoxContainer8" instance=ExtResource("2_ikwgn")]
+layout_mode = 2
+action = "move_right"
+option_device = 2
