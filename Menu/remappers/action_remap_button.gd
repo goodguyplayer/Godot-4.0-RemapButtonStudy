@@ -20,6 +20,9 @@ func _toggled(button_pressed):
 		display_current_key()
 		
 		
+# "For gameplay input, _unhandled_input and _unhandled_key_input are usually a better 
+# fit as they allow the GUI to intercept the events first." -
+# https://docs.godotengine.org/en/stable/classes/class_node.html#class-node-method-input
 func _unhandled_input(event):
 	if event is InputEventKey:
 		print(event.as_text_key_label())
@@ -31,6 +34,9 @@ func _unhandled_input(event):
 		print(event.as_text())
 
 
+# "This method also performs better than _unhandled_input, since unrelated events such as
+# InputEventMouseMotion are automatically filtered." - 
+# https://docs.godotengine.org/en/stable/classes/class_node.html#class-node-method-unhandled-key-input
 func _unhandled_key_input(event):
 	# Note that you can use the _input callback instead, especially if
 	# you want to work with gamepads.
