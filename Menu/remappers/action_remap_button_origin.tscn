@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://dgrgs7ysrdoxc"]
-
-[ext_resource type="Script" path="res://Menu/remappers/action_remap_button_origin.gd" id="1_y7fya"]
-
-[node name="action_remap_button" type="Button"]
-offset_right = 39.0
-offset_bottom = 14.0
-toggle_mode = true
-script = ExtResource("1_y7fya")

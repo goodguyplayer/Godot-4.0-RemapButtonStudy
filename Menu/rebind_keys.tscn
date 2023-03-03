@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://44crxa56bryo"]
 
-[ext_resource type="PackedScene" uid="uid://dgrgs7ysrdoxc" path="res://Menu/remappers/action_remap_button_origin.tscn" id="1_herdf"]
-[ext_resource type="PackedScene" uid="uid://bqvvwtifdbj5b" path="res://Menu/remappers/action_remap_button_all_inputs.tscn" id="2_ikwgn"]
+[ext_resource type="PackedScene" uid="uid://vkgqqrw05mqs" path="res://Menu/remappers/action_remap_button_origin/action_remap_button_origin.tscn" id="1_herdf"]
+[ext_resource type="PackedScene" uid="uid://bqvvwtifdbj5b" path="res://Menu/remappers/action_remap_button_all_inputs/action_remap_button_all_inputs.tscn" id="2_ikwgn"]
 
 [node name="RebindKeys" type="Control"]
 layout_mode = 3
@@ -30,10 +30,12 @@ vertical_alignment = 1
 [node name="Label" type="Label" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
 text = "Original (Only keyboard)"
+horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
+alignment = 1
 
 [node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -45,6 +47,7 @@ action = "move_up"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
+alignment = 1
 
 [node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
@@ -56,6 +59,7 @@ action = "move_down"
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
+alignment = 1
 
 [node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
@@ -67,6 +71,7 @@ action = "move_left"
 
 [node name="HBoxContainer4" type="HBoxContainer" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
+alignment = 1
 
 [node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer4"]
 layout_mode = 2
@@ -171,3 +176,15 @@ option_device = 1
 layout_mode = 2
 action = "move_right"
 option_device = 2
+
+[node name="Label5" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "----------------"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label6" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "Each button has its own device"
+horizontal_alignment = 1
+vertical_alignment = 1
