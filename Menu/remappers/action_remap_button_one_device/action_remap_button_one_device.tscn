@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://i75g3xl64lk4"]
+
+[ext_resource type="Script" path="res://Menu/remappers/action_remap_button_one_device/action_remap_button_one_device.gd" id="1_r6kxj"]
+
+[node name="action_remap_button_one_device" type="Button"]
+offset_right = 35.0
+offset_bottom = 8.0
+toggle_mode = true
+script = ExtResource("1_r6kxj")
