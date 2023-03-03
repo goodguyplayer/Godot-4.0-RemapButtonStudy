@@ -6,16 +6,29 @@ extends Button
 func _ready():
 	assert(InputMap.has_action(action))
 	set_process_unhandled_key_input(false)
+	set_process_unhandled_input(false)
 	display_current_key()
 	
 	
 func _toggled(button_pressed):
 	set_process_unhandled_key_input(button_pressed)
+	set_process_unhandled_input(button_pressed)
 	if button_pressed:
 		text = "... Key"
 		release_focus()
 	else:
 		display_current_key()
+		
+		
+func _unhandled_input(event):
+	if event is InputEventKey:
+		print(event.as_text_key_label())
+	
+	if event is InputEventMouseButton:
+		print(event.as_text())
+		
+	if event is InputEventJoypadButton:
+		print(event.as_text())
 
 
 func _unhandled_key_input(event):
