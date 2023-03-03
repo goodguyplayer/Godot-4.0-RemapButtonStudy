@@ -20,269 +20,275 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-size_flags_horizontal = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/ScrollContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/ScrollContainer/MarginContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 alignment = 1
 
-[node name="Label2" type="Label" parent="CanvasLayer/ScrollContainer/VBoxContainer"]
+[node name="Label2" type="Label" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "----------------"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Original (Only keyboard)"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 alignment = 1
 
-[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer"]
+[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 text = "Up"
 
-[node name="action_remap_button" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer" instance=ExtResource("1_herdf")]
+[node name="action_remap_button" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer" instance=ExtResource("1_herdf")]
 layout_mode = 2
 action = "move_up"
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/VBoxContainer"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 alignment = 1
 
-[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer2"]
+[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
 text = "Down"
 
-[node name="action_remap_button" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer2" instance=ExtResource("1_herdf")]
+[node name="action_remap_button" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer2" instance=ExtResource("1_herdf")]
 layout_mode = 2
 action = "move_down"
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/VBoxContainer"]
+[node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 alignment = 1
 
-[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer3"]
+[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 text = "Left"
 
-[node name="action_remap_button" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer3" instance=ExtResource("1_herdf")]
+[node name="action_remap_button" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer3" instance=ExtResource("1_herdf")]
 layout_mode = 2
 action = "move_left"
 
-[node name="HBoxContainer4" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/VBoxContainer"]
+[node name="HBoxContainer4" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 alignment = 1
 
-[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer4"]
+[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer4"]
 layout_mode = 2
 text = "Right"
 
-[node name="action_remap_button" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer4" instance=ExtResource("1_herdf")]
+[node name="action_remap_button" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer4" instance=ExtResource("1_herdf")]
 layout_mode = 2
 action = "move_right"
 
-[node name="Label3" type="Label" parent="CanvasLayer/ScrollContainer/VBoxContainer"]
+[node name="Label3" type="Label" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "----------------"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label4" type="Label" parent="CanvasLayer/ScrollContainer/VBoxContainer"]
+[node name="Label4" type="Label" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Considers 3 devices"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="HBoxContainer5" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/VBoxContainer"]
+[node name="HBoxContainer5" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 alignment = 1
 
-[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer5"]
+[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer5"]
 layout_mode = 2
 text = "Up"
 
-[node name="Button" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer5" instance=ExtResource("2_ikwgn")]
+[node name="Button" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer5" instance=ExtResource("2_ikwgn")]
 layout_mode = 2
 action = "move_up"
 
-[node name="Button2" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer5" instance=ExtResource("2_ikwgn")]
+[node name="Button2" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer5" instance=ExtResource("2_ikwgn")]
 layout_mode = 2
 action = "move_up"
 option_device = 1
 
-[node name="Button3" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer5" instance=ExtResource("2_ikwgn")]
+[node name="Button3" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer5" instance=ExtResource("2_ikwgn")]
 layout_mode = 2
 action = "move_up"
 option_device = 2
 
-[node name="HBoxContainer6" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/VBoxContainer"]
+[node name="HBoxContainer6" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 alignment = 1
 
-[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer6"]
+[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer6"]
 layout_mode = 2
 text = "Down"
 
-[node name="Button" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer6" instance=ExtResource("2_ikwgn")]
+[node name="Button" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer6" instance=ExtResource("2_ikwgn")]
 layout_mode = 2
 action = "move_down"
 
-[node name="Button2" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer6" instance=ExtResource("2_ikwgn")]
+[node name="Button2" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer6" instance=ExtResource("2_ikwgn")]
 layout_mode = 2
 action = "move_down"
 option_device = 1
 
-[node name="Button3" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer6" instance=ExtResource("2_ikwgn")]
+[node name="Button3" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer6" instance=ExtResource("2_ikwgn")]
 layout_mode = 2
 action = "move_down"
 option_device = 2
 
-[node name="HBoxContainer7" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/VBoxContainer"]
+[node name="HBoxContainer7" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 alignment = 1
 
-[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer7"]
+[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer7"]
 layout_mode = 2
 text = "Left"
 
-[node name="Button" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer7" instance=ExtResource("2_ikwgn")]
+[node name="Button" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer7" instance=ExtResource("2_ikwgn")]
 layout_mode = 2
 action = "move_left"
 
-[node name="Button2" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer7" instance=ExtResource("2_ikwgn")]
+[node name="Button2" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer7" instance=ExtResource("2_ikwgn")]
 layout_mode = 2
 action = "move_left"
 option_device = 1
 
-[node name="Button3" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer7" instance=ExtResource("2_ikwgn")]
+[node name="Button3" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer7" instance=ExtResource("2_ikwgn")]
 layout_mode = 2
 action = "move_left"
 option_device = 2
 
-[node name="HBoxContainer8" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/VBoxContainer"]
+[node name="HBoxContainer8" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 alignment = 1
 
-[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer8"]
+[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer8"]
 layout_mode = 2
 text = "Right"
 
-[node name="Button" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer8" instance=ExtResource("2_ikwgn")]
+[node name="Button" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer8" instance=ExtResource("2_ikwgn")]
 layout_mode = 2
 action = "move_right"
 
-[node name="Button2" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer8" instance=ExtResource("2_ikwgn")]
+[node name="Button2" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer8" instance=ExtResource("2_ikwgn")]
 layout_mode = 2
 action = "move_right"
 option_device = 1
 
-[node name="Button3" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer8" instance=ExtResource("2_ikwgn")]
+[node name="Button3" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer8" instance=ExtResource("2_ikwgn")]
 layout_mode = 2
 action = "move_right"
 option_device = 2
 
-[node name="Label5" type="Label" parent="CanvasLayer/ScrollContainer/VBoxContainer"]
+[node name="Label5" type="Label" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "----------------"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label6" type="Label" parent="CanvasLayer/ScrollContainer/VBoxContainer"]
+[node name="Label6" type="Label" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "A button only listen to an individual device"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="HBoxContainer9" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/VBoxContainer"]
+[node name="HBoxContainer9" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 alignment = 1
 
-[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer9"]
+[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer9"]
 layout_mode = 2
 text = "Up"
 
-[node name="action_remap_button_one_device" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer9" instance=ExtResource("3_cxi41")]
+[node name="action_remap_button_one_device" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer9" instance=ExtResource("3_cxi41")]
 layout_mode = 2
 action = "move_up"
 
-[node name="action_remap_button_one_device2" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer9" instance=ExtResource("3_cxi41")]
+[node name="action_remap_button_one_device2" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer9" instance=ExtResource("3_cxi41")]
 layout_mode = 2
 action = "move_up"
 option_device = 1
 
-[node name="action_remap_button_one_device3" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer9" instance=ExtResource("3_cxi41")]
+[node name="action_remap_button_one_device3" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer9" instance=ExtResource("3_cxi41")]
 layout_mode = 2
 action = "move_up"
 option_device = 2
 
-[node name="HBoxContainer10" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/VBoxContainer"]
+[node name="HBoxContainer10" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 alignment = 1
 
-[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer10"]
+[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer10"]
 layout_mode = 2
 text = "Down"
 
-[node name="action_remap_button_one_device" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer10" instance=ExtResource("3_cxi41")]
+[node name="action_remap_button_one_device" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer10" instance=ExtResource("3_cxi41")]
 layout_mode = 2
 action = "move_down"
 
-[node name="action_remap_button_one_device2" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer10" instance=ExtResource("3_cxi41")]
+[node name="action_remap_button_one_device2" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer10" instance=ExtResource("3_cxi41")]
 layout_mode = 2
 action = "move_down"
 option_device = 1
 
-[node name="action_remap_button_one_device3" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer10" instance=ExtResource("3_cxi41")]
+[node name="action_remap_button_one_device3" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer10" instance=ExtResource("3_cxi41")]
 layout_mode = 2
 action = "move_down"
 option_device = 2
 
-[node name="HBoxContainer11" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/VBoxContainer"]
+[node name="HBoxContainer11" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 alignment = 1
 
-[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer11"]
+[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer11"]
 layout_mode = 2
 text = "Left"
 
-[node name="action_remap_button_one_device" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer11" instance=ExtResource("3_cxi41")]
+[node name="action_remap_button_one_device" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer11" instance=ExtResource("3_cxi41")]
 layout_mode = 2
 action = "move_left"
 
-[node name="action_remap_button_one_device2" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer11" instance=ExtResource("3_cxi41")]
+[node name="action_remap_button_one_device2" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer11" instance=ExtResource("3_cxi41")]
 layout_mode = 2
 action = "move_left"
 option_device = 1
 
-[node name="action_remap_button_one_device3" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer11" instance=ExtResource("3_cxi41")]
+[node name="action_remap_button_one_device3" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer11" instance=ExtResource("3_cxi41")]
 layout_mode = 2
 action = "move_left"
 option_device = 2
 
-[node name="HBoxContainer12" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/VBoxContainer"]
+[node name="HBoxContainer12" type="HBoxContainer" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 alignment = 1
 
-[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer12"]
+[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer12"]
 layout_mode = 2
 text = "Right"
 
-[node name="action_remap_button_one_device" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer12" instance=ExtResource("3_cxi41")]
+[node name="action_remap_button_one_device" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer12" instance=ExtResource("3_cxi41")]
 layout_mode = 2
 action = "move_right"
 
-[node name="action_remap_button_one_device2" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer12" instance=ExtResource("3_cxi41")]
+[node name="action_remap_button_one_device2" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer12" instance=ExtResource("3_cxi41")]
 layout_mode = 2
 action = "move_right"
 option_device = 1
 
-[node name="action_remap_button_one_device3" parent="CanvasLayer/ScrollContainer/VBoxContainer/HBoxContainer12" instance=ExtResource("3_cxi41")]
+[node name="action_remap_button_one_device3" parent="CanvasLayer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer12" instance=ExtResource("3_cxi41")]
 layout_mode = 2
 action = "move_right"
 option_device = 2
