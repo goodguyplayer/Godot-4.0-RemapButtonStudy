@@ -27,7 +27,9 @@ func _unhandled_input(event):
 	if event is InputEventKey:
 		print(event.as_text_key_label())
 	
+	# Seems that it needs to be on the container containing the button?
 	if event is InputEventMouseButton:
+		print(InputMap.action_get_events(action)[1])
 		print(event.as_text())
 		
 	if event is InputEventJoypadButton:
