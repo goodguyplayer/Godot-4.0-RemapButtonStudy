@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfnt8ucjx8cu7"]
+
+[ext_resource type="Script" path="res://Menu/remappers/action_remap_button_possible_null/action_remap_button_different_actions.gd" id="1_gjwtw"]
+
+[node name="action_remap_button_different_actions" type="Button"]
+offset_right = 75.0
+offset_bottom = 21.0
+toggle_mode = true
+script = ExtResource("1_gjwtw")
